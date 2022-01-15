@@ -1,0 +1,120 @@
+.main_section {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.main_section h1 {
+  margin-top: 100px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.msg_div {
+  width: 35%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-image: url(../../assets/contact/bg.png);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.form input,
+textarea {
+  border-radius: 30px;
+  padding: 20px 35px;
+  font-size: 16px;
+  outline: none;
+  margin: 10px 0;
+  color: #454360;
+  border: 0;
+}
+.name_subject_div {
+  display: flex;
+  justify-content: space-between;
+}
+.form .name_subject_div .name_subject {
+  width: 35%;
+}
+.btn_div {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.submit_btn {
+  padding: 15px 35px;
+  color: #fff !important;
+  background: #ff4c60;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+}
+.submit_btn:focus {
+  -webkit-animation: btn 250ms 1 ease-in-out;
+  animation: btn 250ms 1 ease-in-out;
+}
+.submit_btn:active {
+  -webkit-animation: none;
+  animation: none;
+}
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1100px) and (min-width: 1050px) {
+  .main_section {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 1050px) {
+  .main_section {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .main_section h1 {
+    margin-left: 20px;
+  }
+  .container {
+    align-self: center;
+    width: 95%;
+  }
+}
+@media (max-width: 880px) {
+  .form {
+    width: 65%;
+  }
+  .form .name_subject_div .name_subject {
+    width: 33%;
+  }
+}
+@media (max-width: 730px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form,
+  .msg_div {
+    width: 97%;
+  }
+}
+@media (max-width: 465px) {
+  .form input,
+  textarea {
+    font-size: 13px;
+    padding: 17px 20px;
+  }
+}
